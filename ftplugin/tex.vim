@@ -1,7 +1,7 @@
-vnoremap <buffer> im <ESC>:call SelectInMath(0)<CR>
-vnoremap <buffer> am <ESC>:call SelectInMath(1)<CR>
-omap <buffer> im :normal vim<CR>
-omap <buffer> am :normal vam<CR>
+vnoremap <buffer> i$ <ESC>:call SelectInMath(0)<CR>
+vnoremap <buffer> a$ <ESC>:call SelectInMath(1)<CR>
+omap <buffer> i$ :normal vim<CR>
+omap <buffer> a$ :normal vam<CR>
 
 " Operate on LaTeX quotes
 vmap <buffer> iq <ESC>?``<CR>llv/''<CR>h
