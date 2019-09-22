@@ -114,10 +114,10 @@ endfunction
 function! MatchedBlock()
     if getline(line(".")) =~ '.*\\begin.*$'
         normal! j
-        call cursor(NextEnd(), 0)
+        call cursor(<sid>NextEnd(), 0)
     elseif getline(line(".")) =~ '.*\\end.*$'
         normal! k
-        call cursor(PrevBegin(), 0)
+        call cursor(<sid>PrevBegin(), 0)
     else
         normal! %
     end
